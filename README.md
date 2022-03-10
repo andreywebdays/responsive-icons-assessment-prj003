@@ -18,3 +18,9 @@ Open Sans font should be used, the site title should be your name and date.
 Center content and code should be commented. 
 
 Use any libraries you are comfortable with, just list them on the page after the circles and squares in a “Made with” section.
+
+
+Completed Assignment
+-------
+
+Completed assignment is published at https://andreywebdays.github.io/spinutech-responsive-icons-assessment/
