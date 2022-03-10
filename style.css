@@ -1,0 +1,192 @@
+/* Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    /* Test element positions */
+    /* border-style: solid!important;
+    border: 1px;
+    border-color: white; */
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2{
+    margin: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p, a{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.circles, .squares{
+    display: flex;
+    justify-content: center;
+}
+
+.circles > div, .squares > div{
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+    margin: 10px;
+}
+
+.circles > div{
+    flex-direction: column;
+}
+
+.squares > div{
+    flex-direction: column-reverse;
+}
+
+.circle, .square{
+    height: 100px;
+    width: 100px; 
+    background: white;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+.made-with{
+    margin-top: 20px;
+}
+
+/* icon colors (shape colors) */
+.icon-red{
+    background: red;
+}
+
+.icon-green{
+    background: green;
+}
+
+.icon-blue{
+    background: blue;
+}
+
+.icon-orange{
+    background: orange;
+}
+
+.icon-yellow{
+    background: yellow;
+}
+
+/* label colors */
+.p-red{
+    color: red;
+}
+
+.p-green{
+    color: green;
+}
+
+.p-blue{
+    color: blue;
+}
+
+.p-orange{
+    color: orange;
+}
+
+.p-yellow{
+    color: yellow;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1300px){
+    
+    body{
+        background: white;
+    }
+    
+    h1, h2{
+        color: black;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    h2{
+        font-size: .75rem;
+    }
+    
+    p, a{
+        font-size: .75rem;
+        color: black;
+    }
+
+    .circles > div, .squares > div{
+        height: 100px;
+        margin: 10px;
+    }
+
+    .circle, .square{
+        height: 70px;
+        width: 70px; 
+    }
+}
+
+@media (max-width: 460px){
+    
+    .circles > div, .squares > div{
+        height: 70px;
+        margin: 5px;
+    }
+
+    .circle, .square{
+        height: 50px;
+        width: 50px; 
+    }
+}
+
+@media (max-width: 320px){
+    
+    p, a{
+        font-size: .6rem;
+    }
+    
+    .circles > div, .squares > div{
+        height: 60px;
+        margin: 4px;
+    }
+
+    .circle, .square{
+        height: 40px;
+        width: 40px; 
+    }
+}
